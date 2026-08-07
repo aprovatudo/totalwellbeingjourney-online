@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Mystuff</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Calibri, Arial, sans-serif;background:#f4f5f7;color:#455a64;line-height:1.6}
+header{background:#ffffff;border-bottom:3px solid #37474f;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:10}
+header h1{font-family:Calibri, 'Gill Sans', sans-serif;font-size:1rem;font-weight:900;color:#263238;letter-spacing:.02em}
+nav ul{list-style:none;display:flex;gap:32px}
+nav a{color:#37474f;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+nav a:hover{color:#263238}
+.hero{display:grid;grid-template-columns:1fr 380px;min-height:480px}
+.hero-left{background:#f4f5f7;padding:64px 40px 64px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-size:.75rem;letter-spacing:.18em;color:#37474f;text-transform:uppercase;font-weight:700;margin-bottom:16px}
+.hero-left h2{font-family:Calibri, 'Gill Sans', sans-serif;font-size:2.6rem;font-weight:900;color:#263238;line-height:1.15;margin-bottom:20px}
+.hero-left h2 em{color:#37474f;font-style:normal}
+.hero-left p{color:#455a64;font-size:1rem;max-width:480px;margin-bottom:32px;line-height:1.75}
+.hero-cta{display:inline-block;background:#37474f;color:white;padding:14px 32px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
+.hero-cta:hover{background:#263238}
+.hero-right{background:#37474f;color:#ffffff;padding:48px 36px;display:flex;flex-direction:column;justify-content:center;gap:24px}
+.hero-right h3{font-family:Calibri, 'Gill Sans', sans-serif;font-size:1rem;font-weight:700;opacity:.7;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.info-item{border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:16px}
+.info-item:last-child{border-bottom:none;padding-bottom:0}
+.info-label{font-size:.75rem;opacity:.65;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.info-value{font-size:1rem;font-weight:600}
+.section{max-width:960px;margin:72px auto;padding:0 40px}
+.section-label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#37474f;font-weight:700;margin-bottom:12px}
+.section h2{font-family:Calibri, 'Gill Sans', sans-serif;font-size:1.7rem;font-weight:900;color:#263238;margin-bottom:40px}
+.srv-row{display:flex;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #eceff1}
+.srv-row:last-child{border-bottom:none}
+.srv-num{font-family:Calibri, 'Gill Sans', sans-serif;font-size:2rem;font-weight:900;color:#37474f;opacity:.3;min-width:56px;line-height:1}
+.srv-body h4{font-family:Calibri, 'Gill Sans', sans-serif;font-size:1rem;font-weight:700;color:#263238;margin-bottom:6px}
+.srv-body p{font-size:.9rem;color:#455a64;line-height:1.65}
+.sobre-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
+.sobre-text p{color:#455a64;line-height:1.85;margin-bottom:16px}
+.stats-panel{background:#eceff1;border-left:4px solid #37474f;padding:28px}
+.stats-panel p{font-size:.88rem;color:#455a64;margin-bottom:10px;line-height:1.5}
+.stats-panel p strong{color:#263238;display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+.contato-box{background:#eceff1;border-left:4px solid #37474f;padding:32px;max-width:560px}
+.contato-box p{font-size:.95rem;color:#455a64;margin-bottom:12px;line-height:1.6}
+.contato-box a{color:#37474f;text-decoration:none;font-weight:600}
+footer{background:#263238;color:#78909c;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;margin-top:80px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-right{display:none}.sobre-grid{grid-template-columns:1fr}nav{display:none}}
+</style></head><body>
+<header><h1>Mystuff</h1><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
+<div id="hero" class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Software · Inovação · Eficiência</p>
+    <h2>Soluções de <em>software</em> que <em>transformam</em> seu negócio</h2>
+    <p>A Mystuff desenvolve e licencia programas de computador de alta qualidade para empresas que buscam otimizar seus processos. Soluções prontas e confiáveis que crescem junto com seu negócio.</p>
+    <a href="#contato" class="hero-cta">Agendar reunião</a>
+  </div>
+  <div class="hero-right">
+    <h3>Mystuff</h3>
+    <div class="info-item"><div class="info-label">Fundação</div><div class="info-value">2026</div></div>
+    <div class="info-item"><div class="info-label">Localização</div><div class="info-value">Belo Horizonte — MG</div></div>
+    
+    <div class="info-item"><div class="info-label">CNPJ</div><div class="info-value">66.678.760/0001-60</div></div>
+  </div>
+</div>
+<div id="servicos" class="section"><p class="section-label">Competências</p><h2>Onde podemos ajudar</h2><div class="srv-row"><div class="srv-num">01</div><div class="srv-body"><h4>Desenvolvimento de Software</h4><p>Criação de aplicações sob medida e escaláveis para as necessidades específicas da sua empresa.</p></div></div><div class="srv-row"><div class="srv-num">02</div><div class="srv-body"><h4>Licenciamento de Sistemas</h4><p>Acesso a programas robustos e testados, prontos para implementação imediata em sua operação.</p></div></div><div class="srv-row"><div class="srv-num">03</div><div class="srv-body"><h4>Suporte e Manutenção</h4><p>Acompanhamento técnico contínuo para garantir o melhor desempenho de suas soluções.</p></div></div><div class="srv-row"><div class="srv-num">04</div><div class="srv-body"><h4>Consultoria em Tecnologia</h4><p>Orientação especializada para escolher as melhores ferramentas digitais para seu negócio.</p></div></div></div>
+<div id="sobre" class="section"><p class="section-label">Sobre a empresa</p><h2>Quem somos</h2>
+<div class="sobre-grid">
+  <div class="sobre-text"><p>A Mystuff é uma empresa de desenvolvimento e licenciamento de software sediada em Belo Horizonte, Minas Gerais. Com foco em soluções tecnológicas inovadoras, atendemos empresas de diversos segmentos com programas de computador não-customizáveis, eficientes e de fácil implementação.</p><p>Nossa diferença está na qualidade do código, na confiabilidade das soluções e no comprometimento com o sucesso de nossos clientes. Investimos continuamente em tecnologia e conhecimento para oferecer softwares que geram resultados reais e sustentáveis.</p></div>
+  <div class="stats-panel">
+    <p><strong>Razão Social</strong>Mystuff Desenvolvimento De Software Ltda</p>
+    <p><strong>CNPJ</strong>66.678.760/0001-60</p>
+    <p><strong>Estado</strong>Minas Gerais</p>
+    <p><strong>Situação</strong>✅ Ativa</p>
+  </div>
+</div></div>
+<div id="contato" class="section"><p class="section-label">Fale conosco</p><h2>Contato</h2>
+<div class="contato-box">
+  <p>Entre em contato e saiba como podemos apoiar o seu negócio.</p>
+  <p><strong>Telefone:</strong> <a href="tel:+553199785565">(31) 9978-5565</a></p><p><strong>Endereço:</strong> R. Severino Melo Jardim, 237, Belvedere, Belo Horizonte — MG, CEP 30320-580</p>
+</div></div>
+<footer><span>Mystuff — CNPJ 66.678.760/0001-60</span><span>© 2026–2026 Mystuff Desenvolvimento De Software Ltda</span></footer>
+</body></html>
